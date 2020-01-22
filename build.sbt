@@ -4,6 +4,8 @@ description := "Add-on that enables Sclera to work with data stored in Heroku Po
 
 version := "4.0-SNAPSHOT"
 
+homepage := Some(url("https://github.com/scleradb/sclera-plugin-heroku"))
+
 organization := "com.scleradb"
 
 organizationName := "Sclera, Inc."
