@@ -22,7 +22,6 @@ import java.net.URI
 import com.scleradb.exec.Schema
 
 import com.scleradb.sql.mapper.SqlMapper
-import com.scleradb.sql.mapper.default.PostgreSQLMapper
 
 import com.scleradb.dbms.location.{LocationId, LocationPermit}
 import com.scleradb.dbms.rdbms.driver.SqlDriver
@@ -30,6 +29,7 @@ import com.scleradb.dbms.rdbms.driver.SqlDriver
 import com.scleradb.dbms.rdbms.location.RdbmsLocation
 
 import com.scleradb.plugin.dbms.rdbms.postgresql.driver.PostgreSQLDriver
+import com.scleradb.plugin.dbms.rdbms.postgresql.mapper.PostgreSQLMapper
 
 class HerokuPostgreSQL(
     override val schema: Schema,
