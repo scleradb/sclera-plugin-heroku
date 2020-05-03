@@ -50,7 +50,7 @@ class HerokuPostgreSQL(
         dbUri.getHost() + ":" + dbUri.getPort() + dbUri.getPath()
     private val userInfo: Array[String] = dbUri.getUserInfo().split(":")
 
-    override val sqlMapper: SqlMapper = new PostgreSQLMapper(Some(this))
+    override val sqlMapper: SqlMapper = new PostgreSQLMapper(this)
     override val url: String = "jdbc:postgresql://" + param
     override val config: List[(String, String)] =
         List("user" -> userInfo(0), "password" -> userInfo(1)) ::: userConfig
